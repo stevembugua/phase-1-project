@@ -1,5 +1,5 @@
 // variables
-const generalBtn = document.getElementById("genral");
+const generalBtn = document.getElementById("general");
 const businessBtn = document.getElementById("business");
 const sportsBtn = document.getElementById("sport");
 const entertainmentBtn = document.getElementById("entertainment");
@@ -180,12 +180,6 @@ const fetchQueryNews = async () => {
 function displayNews() {
 
     newsdetails.innerHTML = "";
-
-    // if(newsDataArr.length == 0) {
-    //     newsdetails.innerHTML = "<h5>No data found.</h5>"
-    //     return;
-    // }
-
     newsDataArr.forEach(news => {
 
         var date = news.publishedAt.split("T");
